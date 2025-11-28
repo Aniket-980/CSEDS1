@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Simple E‑commerce Product Page</title>
+
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    margin: 0;
+    padding: 0;
+  }
+
+  .container {
+    width: 80%;
+    margin: 40px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+
+  h1 {
+    color: #222;
+    margin-bottom: 10px;
+  }
+
+  .product-box {
+    display: flex;
+    gap: 20px;
+  }
+
+  .product-box img {
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+  }
+
+  .details {
+    flex: 1;
+  }
+
+  .price {
+    font-size: 24px;
+    font-weight: bold;
+    color: #e63946;
+    margin: 10px 0;
+  }
+
+  .description {
+    color: #555;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+
+  button {
+    padding: 12px 20px;
+    background: #1d4ed8;
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+
+  button:hover {
+    background: #1743b1;
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <h1>COCO Premium Perfume</h1>
+
+  <div class="product-box">
+    <img src="https://images.unsplash.com/photo-1585386959984-a4155224a1ad?w=800" alt="Perfume Bottle">
+
+    <div class="details">
+      <div class="price">₹2,499</div>
+
+      <p class="description">
+      “Crafted with premium, long-lasting ingredients for a fragrance that stays true all day.”
+      "Experience exceptional purity, rich aroma, and unmatched quality in every drop.”
+      </p>
+
+      <button>Add to Cart</button>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

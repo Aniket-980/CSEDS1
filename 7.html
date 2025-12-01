@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Navigation Menu Demo</title>
+    <style>
+        body{
+            font-family: Arial;
+            text-align: center;
+        }
+
+        /* Main box */
+        .box{
+            width: 350px;
+            margin: 20px auto;
+            padding: 20px;
+            border: 2px solid black;
+        }
+
+        /* BLOCK */
+        .block a{
+            display: block;
+            background: lightblue;
+            padding: 8px;
+            margin: 4px 0;
+            text-decoration: none;
+        }
+
+        /* INLINE */
+        .inline a{
+            display: inline;
+            padding: 5px 8px;
+            text-decoration: none;
+            color: blue;
+        }
+
+        /* INLINE-BLOCK */
+        .inline-block a{
+            display: inline-block;
+            background: #eee;
+            padding: 8px 12px;
+            margin: 4px;
+            border: 1px solid #ccc;
+            text-decoration: none;
+        }
+
+        /* FLOAT */
+        .float a{
+            float: left;
+            background: lightgreen;
+            padding: 8px 10px;
+            margin-right: 5px;
+            text-decoration: none;
+        }
+
+        /* CLEAR FLOAT FIX */
+        .clear{
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="box">
+
+        <h3>Block Menu</h3>
+        <div class="block">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </div>
+
+        <h3>Inline Menu</h3>
+        <div class="inline">
+            <a href="#">Home</a>
+            <a href="#">Blog</a>
+            <a href="#">Help</a>
+        </div>
+
+        <h3>Inline-block Menu</h3>
+        <div class="inline-block">
+            <a href="#">Home</a>
+            <a href="#">Products</a>
+            <a href="#">Login</a>
+        </div>
+
+        <h3>Float Menu</h3>
+        <div class="float">

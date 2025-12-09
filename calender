@@ -9,8 +9,4 @@ def display_calendar():
     month = int(input("Enter month (1-12): "))
     
     # Display the calendar
-    print("\nHere is your calendar:\n")
-    print(calendar.month(year, month))
-
-# Run the function
-display_calendar()
+    print("\nHere is your calendar:\n

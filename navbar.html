@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Responsive Navbar</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        /* Navbar */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px;
+            background: #222;
+            color: white;
+        }
+
+        .logo {
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+        }
+
+        /* Hide checkbox */
+        #menu-toggle {
+            display: none;
+        }
+
+        /* Hamburger icon */
+        .menu-icon {
+            display: none;
+            font-size: 26px;
+            cursor: pointer;
+        }
+
+        /* Responsive styles */
+        @media (max-width: 768px) {
+
+            .menu-icon {
+                display: block;
+            }
+
+            .nav-links {
+                display: none;
+                flex-direction: column;
+                background: #333;
+                width: 100%;
+                padding: 20px 0;
+                position: absolute;
+                top: 60px;
+                left: 0;
+            }
+
+            /* Show menu when checkbox is checked */
+            #menu-toggle:checked ~ .nav-links {
+                display: flex;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar">
+
+        <div class="logo">MyShop</div>
+
+        <!-- Checkbox for menu toggle -->
+        <input type="checkbox" id="menu-toggle">
+
+        <!-- Hamburger Icon -->
+        <label for="menu-toggle" class="menu-icon">☰</label>
+
+        <!-- Navbar Links -->
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Deals</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+
+    </nav>
+
+</body>
+</html>
